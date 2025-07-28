@@ -1,0 +1,12 @@
+name: github Action demo 
+run-name: ${{github.acto}} is testing out Github Actions 
+
+on:
+ push:
+
+jobs:
+ build:
+  runs-on: ubuntu-latest 
+  steps:
+   - run: echo "the was automatically triggered by a ${{github.event_name}} event.
+   - run: echo "the job is now running on ${{runner.os}} server hosted by github.
